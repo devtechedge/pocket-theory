@@ -85,7 +85,7 @@ export default async function AccountOrderDetailPage({
             </p>
             {order.carrierName ? (
               <p className="mt-1 font-mono text-pt-ink">
-                {order.carrierName} // {order.trackingNumber ?? "Pending"}
+                {order.carrierName} | {order.trackingNumber ?? "Pending"}
               </p>
             ) : (
               <p className="mt-1 text-pt-ink-muted">

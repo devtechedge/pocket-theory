@@ -51,21 +51,35 @@ export function StorefrontProvider({
   children: ReactNode;
 }) {
   const router = useRouter();
-  const [cartItemCount, setCartItemCount] = useState(initialCartCount);
-  const [wishlistIds, setWishlistIds] = useState<Set<string>>(
-    () => new Set(initialWishlistIds),
+  const [cartCountOverride, setCartCountOverride] = useState<number | null>(
+    null,
+  );
+  const [wishlistOverride, setWishlistOverride] = useState<Set<string> | null>(
+    null,
+  );
+  const [prevInitialCart, setPrevInitialCart] = useState(initialCartCount);
+  const [prevInitialWishKey, setPrevInitialWishKey] = useState(() =>
+    initialWishlistIds.join(","),
+  );
+
+  if (prevInitialCart !== initialCartCount) {
+    setPrevInitialCart(initialCartCount);
+    setCartCountOverride(null);
+  }
+  const wishKey = initialWishlistIds.join(",");
+  if (prevInitialWishKey !== wishKey) {
+    setPrevInitialWishKey(wishKey);
+    setWishlistOverride(null);
+  }
+
+  const cartItemCount = cartCountOverride ?? initialCartCount;
+  const wishlistIds = useMemo(
+    () => wishlistOverride ?? new Set(initialWishlistIds),
+    [wishlistOverride, initialWishlistIds],
   );
   const [compareItems, setCompareItems] = useState<CompareTrayEntry[]>([]);
   const [recentlyViewedSlugs, setRecentlyViewedSlugs] = useState<string[]>([]);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
-
-  useEffect(() => {
-    setCartItemCount(initialCartCount);
-  }, [initialCartCount]);
-
-  useEffect(() => {
-    setWishlistIds(new Set(initialWishlistIds));
-  }, [initialWishlistIds]);
 
   useEffect(() => {
     try {
@@ -105,7 +119,7 @@ export function StorefrontProvider({
 
   const refreshCartCount = useCallback(async (nextCount?: number) => {
     if (typeof nextCount === "number") {
-      setCartItemCount(nextCount);
+      setCartCountOverride(nextCount);
       return;
     }
     const res = await fetch("/api/cart", { cache: "no-store" });
@@ -113,7 +127,7 @@ export function StorefrontProvider({
       const data = (await res.json()) as {
         cart?: { pricing?: { itemCount?: number } };
       };
-      setCartItemCount(data.cart?.pricing?.itemCount ?? 0);
+      setCartCountOverride(data.cart?.pricing?.itemCount ?? 0);
     }
   }, []);
 
@@ -132,7 +146,7 @@ export function StorefrontProvider({
         showToast(data.error ?? "Could not add item to cart.");
         return false;
       }
-      setCartItemCount(data.cart?.pricing?.itemCount ?? 0);
+      setCartCountOverride(data.cart?.pricing?.itemCount ?? 0);
       showToast("Added to cart.");
       router.refresh();
       return true;
@@ -156,7 +170,7 @@ export function StorefrontProvider({
         showToast(data.error ?? "Unable to update wishlist.");
         return;
       }
-      setWishlistIds(new Set(data.productIds ?? []));
+      setWishlistOverride(new Set(data.productIds ?? []));
       showToast(data.wished ? "Saved to wishlist." : "Removed from wishlist.");
       router.refresh();
     },

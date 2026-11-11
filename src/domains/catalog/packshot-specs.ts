@@ -16,7 +16,7 @@ export type HardwareSilhouette =
   | "tws_open"
   | "neckband"
   | "headphones_anc"
-  | "wired_earphones"
+  | "wired_usb_c"
   | "speaker_compact"
   | "speaker_party"
   | "soundbar_desk"

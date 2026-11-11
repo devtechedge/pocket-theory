@@ -147,7 +147,7 @@ export default function TrackOrderPage() {
           </p>
           {result.carrierName && (
             <p className="mt-1 font-mono text-xs text-pt-ink">
-              Dispatch Ref: {result.carrierName} //{" "}
+              Dispatch Ref: {result.carrierName} |{" "}
               {result.trackingNumber ?? "Pending AWB"}
             </p>
           )}

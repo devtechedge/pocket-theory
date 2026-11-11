@@ -38,7 +38,7 @@ export default async function AdminEditProductPage({
       <div className="mb-5 flex flex-wrap items-center justify-between gap-2">
         <div>
           <p className="font-mono text-xs font-bold text-pt-cobalt uppercase">
-            Editing Catalogue #{String(prod.catalogIndex).padStart(2, "0")} //{" "}
+            Editing Catalogue #{String(prod.catalogIndex).padStart(2, "0")} -{" "}
             {prod.sku}
           </p>
           <h1 className="mt-1 font-display text-2xl font-bold text-pt-ink">

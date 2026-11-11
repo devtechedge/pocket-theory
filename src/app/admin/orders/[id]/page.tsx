@@ -56,7 +56,7 @@ export default async function AdminOrderDetailPage({
           {items.map((i) => (
             <li key={i.id} className="flex justify-between py-2">
               <span>
-                {i.productTitle} ({i.variantLabel} // {i.sku}) x {i.quantity}
+                {i.productTitle} ({i.variantLabel} - {i.sku}) x {i.quantity}
               </span>
               <span className="font-mono font-bold">
                 {formatPaise(i.lineTotalPaise)}
