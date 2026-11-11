@@ -1,6 +1,6 @@
 import { createHmac } from "node:crypto";
 import { describe, expect, it } from "vitest";
-import { sanitizeInternalPath } from "@/components/auth/LoginForm";
+import { sanitizeInternalPath } from "@/lib/security/redirect";
 import { hasCapability } from "@/domains/auth/rbac";
 import {
   verifyRazorpayCheckoutSignature,

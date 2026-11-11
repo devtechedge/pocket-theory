@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { LoginForm, sanitizeInternalPath } from "@/components/auth/LoginForm";
+import { LoginForm } from "@/components/auth/LoginForm";
 import { getCurrentUser } from "@/domains/auth/session";
 import { isDemoMode } from "@/env";
+import { sanitizeInternalPath } from "@/lib/security/redirect";
 
 export const dynamic = "force-dynamic";
 

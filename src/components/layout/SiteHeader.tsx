@@ -150,7 +150,10 @@ export function SiteHeader({ user, demoMode }: SiteHeaderProps) {
 
       {/* Mobile inline search bar */}
       <div className="border-t border-pt-border px-3 py-2 md:hidden">
-        <SearchBar />
+        <SearchBar
+          inputId="mobile-header-search-input"
+          testId="mobile-search-input"
+        />
       </div>
 
       {/* Desktop category rail */}

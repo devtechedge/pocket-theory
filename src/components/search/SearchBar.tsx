@@ -15,7 +15,15 @@ interface SuggestionItem {
   imageUrl: string;
 }
 
-export function SearchBar({ initialQuery = "" }: { initialQuery?: string }) {
+export function SearchBar({
+  initialQuery = "",
+  inputId = "header-search-input",
+  testId = "header-search-input",
+}: {
+  initialQuery?: string;
+  inputId?: string;
+  testId?: string;
+}) {
   const router = useRouter();
   const [query, setQuery] = useState(initialQuery);
   const [open, setOpen] = useState(false);
@@ -71,7 +79,7 @@ export function SearchBar({ initialQuery = "" }: { initialQuery?: string }) {
   return (
     <div ref={containerRef} className="relative min-w-0 flex-1 max-w-md">
       <form onSubmit={handleSubmit} role="search" className="relative flex">
-        <label htmlFor="header-search-input" className="sr-only">
+        <label htmlFor={inputId} className="sr-only">
           Search gadgets, wattages, or SKU
         </label>
         <Search
@@ -79,7 +87,7 @@ export function SearchBar({ initialQuery = "" }: { initialQuery?: string }) {
           className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-pt-ink-muted"
         />
         <input
-          id="header-search-input"
+          id={inputId}
           type="search"
           value={query}
           onFocus={() => setOpen(true)}
@@ -91,7 +99,7 @@ export function SearchBar({ initialQuery = "" }: { initialQuery?: string }) {
             setOpen(true);
           }}
           placeholder="Search 65W GaN, ANC, cable, dashcam..."
-          data-testid="header-search-input"
+          data-testid={testId}
           className="h-9 w-full min-w-0 rounded-md border border-pt-border bg-pt-surface pr-8 pl-9 text-sm text-pt-ink placeholder:text-pt-ink-muted focus:border-pt-cobalt"
         />
         {query && (
