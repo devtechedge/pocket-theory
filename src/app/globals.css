@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="light"] {
+  color-scheme: light;
+  --pt-bg: #eef1f5;
+  --pt-paper: #e4e9f0;
+  --pt-surface: #f9fafb;
+  --pt-surface-elevated: #ffffff;
+  --pt-silver: #dbe1ea;
+  --pt-ink: #111418;
+  --pt-ink-muted: #434b56;
+  --pt-border: #c8d0dc;
+  --pt-border-strong: #8d98a8;
+
+  --pt-tangerine: #c93d00;
+  --pt-tangerine-hover: #a83200;
+  --pt-on-tangerine: #ffffff;
+  --pt-tangerine-soft: #fde8df;
+  --pt-tangerine-ink: #8a2800;
+
+  --pt-cobalt: #1849c6;
+  --pt-cobalt-soft: #e3ebfd;
+  --pt-cobalt-ink: #123899;
+
+  --pt-lime-soft: #e6f4d7;
+  --pt-lime-ink: #255409;
+
+  --pt-amber-soft: #fef0d6;
+  --pt-amber-ink: #6e4000;
+
+  --pt-danger: #b42318;
+  --pt-danger-soft: #fee4e2;
+  --pt-danger-ink: #8a170e;
+
+  --pt-focus: #1849c6;
+  --pt-scroll-thumb: rgba(67, 75, 86, 0.45);
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --pt-bg: #0d1014;
+  --pt-paper: #12171e;
+  --pt-surface: #161c24;
+  --pt-surface-elevated: #1d2530;
+  --pt-silver: #242e3b;
+  --pt-ink: #edf1f7;
+  --pt-ink-muted: #a6b2c2;
+  --pt-border: #2c3746;
+  --pt-border-strong: #495970;
+
+  --pt-tangerine: #ff6b2b;
+  --pt-tangerine-hover: #ff824d;
+  --pt-on-tangerine: #111418;
+  --pt-tangerine-soft: #361b10;
+  --pt-tangerine-ink: #ffb596;
+
+  --pt-cobalt: #84adff;
+  --pt-cobalt-soft: #172747;
+  --pt-cobalt-ink: #b8d0ff;
+
+  --pt-lime-soft: #1a2f12;
+  --pt-lime-ink: #b6eb8a;
+
+  --pt-amber-soft: #332309;
+  --pt-amber-ink: #fbd288;
+
+  --pt-danger: #ff7b72;
+  --pt-danger-soft: #381615;
+  --pt-danger-ink: #ffb4ae;
+
+  --pt-focus: #84adff;
+  --pt-scroll-thumb: rgba(166, 178, 194, 0.42);
+}
+
+@theme inline {
+  --font-display: "Sora Variable", "Sora", system-ui, -apple-system, sans-serif;
+  --font-sans: "Figtree Variable", "Figtree", system-ui, -apple-system, sans-serif;
+  --font-mono: "Chivo Mono Variable", "Chivo Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --color-pt-bg: var(--pt-bg);
+  --color-pt-paper: var(--pt-paper);
+  --color-pt-surface: var(--pt-surface);
+  --color-pt-surface-elevated: var(--pt-surface-elevated);
+  --color-pt-silver: var(--pt-silver);
+  --color-pt-ink: var(--pt-ink);
+  --color-pt-ink-muted: var(--pt-ink-muted);
+  --color-pt-border: var(--pt-border);
+  --color-pt-border-strong: var(--pt-border-strong);
+  --color-pt-tangerine: var(--pt-tangerine);
+  --color-pt-tangerine-hover: var(--pt-tangerine-hover);
+  --color-pt-on-tangerine: var(--pt-on-tangerine);
+  --color-pt-tangerine-soft: var(--pt-tangerine-soft);
+  --color-pt-tangerine-ink: var(--pt-tangerine-ink);
+  --color-pt-cobalt: var(--pt-cobalt);
+  --color-pt-cobalt-soft: var(--pt-cobalt-soft);
+  --color-pt-cobalt-ink: var(--pt-cobalt-ink);
+  --color-pt-lime-soft: var(--pt-lime-soft);
+  --color-pt-lime-ink: var(--pt-lime-ink);
+  --color-pt-amber-soft: var(--pt-amber-soft);
+  --color-pt-amber-ink: var(--pt-amber-ink);
+  --color-pt-danger: var(--pt-danger);
+  --color-pt-danger-soft: var(--pt-danger-soft);
+  --color-pt-danger-ink: var(--pt-danger-ink);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--pt-bg);
+  color: var(--pt-ink);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--pt-bg);
+  color: var(--pt-ink);
+  overflow-x: clip;
+}
+
+/* Accessible keyboard focus treatment */
+:focus-visible {
+  outline: 2px solid var(--pt-focus);
+  outline-offset: 2px;
+}
+
+/* Skip link for keyboard navigation */
+.skip-link {
+  position: fixed;
+  top: -120px;
+  left: 16px;
+  z-index: 100;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: var(--pt-ink);
+  color: var(--pt-surface-elevated);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 150ms ease;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Overlay hover-reveal scrollbars on inner overflow panes (never html/body) */
+@media (hover: hover) and (pointer: fine) {
+  *:not(html):not(body) {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+
+  *:not(html):not(body):hover,
+  *:not(html):not(body):focus-within {
+    scrollbar-color: var(--pt-scroll-thumb) transparent;
+  }
+
+  *:not(html):not(body)::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  *:not(html):not(body)::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *:not(html):not(body)::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  *:not(html):not(body)::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 9999px;
+  }
+
+  *:not(html):not(body):hover::-webkit-scrollbar-thumb,
+  *:not(html):not(body):focus-within::-webkit-scrollbar-thumb {
+    background-color: var(--pt-scroll-thumb);
+  }
+}
+
+/* Respect user reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle industrial technical grid motif */
+.pt-tech-grid {
+  background-image: radial-gradient(var(--pt-border) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
