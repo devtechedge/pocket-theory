@@ -14,7 +14,7 @@ Configure these in Vercel Project Settings -> Environment Variables (separately 
 | `DATABASE_URL` | Yes (Vercel) | Pooled PostgreSQL connection string (`-pooler` on Neon, `sslmode=require`). |
 | `DATABASE_URL_UNPOOLED` | Recommended | Direct PostgreSQL connection string for running schema migrations (`scripts/migrate.ts`). |
 | `SESSION_PEPPER` | Yes | >=32 random hex characters used to pepper SHA-256 session, cart, and IP rate-limit hashes. |
-| `NEXT_PUBLIC_SITE_URL` | Yes | Final public canonical HTTPS URL (e.g. `https://pocket-theory.vercel.app`) for canonical tags, `sitemap.xml`, `robots.txt`, and JSON-LD. |
+| `NEXT_PUBLIC_SITE_URL` | Yes | Final public canonical HTTPS URL (current: `https://pocket-theory-nu.vercel.app`) for canonical tags, `sitemap.xml`, `robots.txt`, and JSON-LD. |
 | `DEMO_MODE` | Yes | `"1"` for public non-charging demo deployment; `"0"` for live commercial enforcement. |
 | `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` | Optional | Enables live INR Razorpay order creation & signature verification. When unset, checkout uses the clearly labelled Non-Charging Demo Sandbox. |
 | `RAZORPAY_WEBHOOK_SECRET` | Optional | Required for `/api/webhooks/razorpay` HMAC verification. |
