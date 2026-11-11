@@ -34,6 +34,11 @@
 
 ---
 
-## 4. Reporting a Vulnerability
+## 4. Dependency Posture
+
+- `npm audit --omit=dev` reports **0 vulnerabilities** as of 11 Nov 2026.
+- The GitHub Actions pipeline blocks high-severity production advisories (`--audit-level=high`) on every merge to `main`.
+
+## 5. Reporting a Vulnerability
 
 Please report security issues privately via GitHub Security Advisories on `devtechedge/pocket-theory` rather than opening a public issue with exploit details.
