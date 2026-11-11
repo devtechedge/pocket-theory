@@ -4,7 +4,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Badge } from "@/components/ui/Badge";
 import type { UserRole } from "@/db/schema";
-import { hasCapability, type AdminCapability } from "@/domains/auth/rbac";
+import {
+  hasCapability,
+  type AdminCapability,
+} from "@/domains/auth/capabilities";
 
 const NAV_ITEMS: ReadonlyArray<{
   href: string;
