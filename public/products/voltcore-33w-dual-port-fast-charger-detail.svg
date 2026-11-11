@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="VoltCore 33W port and hardware architecture detail">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1E6EE"/>
+      <stop offset="100%" stop-color="#C5CEDB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#11151C"/>
+  <g stroke="#222C3A" stroke-width="1">
+    <line x1="48" y1="90" x2="752" y2="90"/>
+    <line x1="48" y1="490" x2="752" y2="490"/>
+    <line x1="400" y1="90" x2="400" y2="490" stroke-dasharray="4 6"/>
+  </g>
+  <text x="52" y="62" font-family="monospace" font-size="13" font-weight="700" fill="#FF6B2B">INTERFACE &amp; PORT ARCHITECTURE // #08</text>
+  <text x="748" y="62" text-anchor="end" font-family="monospace" font-size="13" fill="#A6B2C2">VoltCore 33W</text>
+  <g transform="translate(-115, 10) scale(0.84)">
+    
+        <rect x="356" y="345" width="16" height="68" rx="8" fill="#8B96A7"/>
+        <rect x="428" y="345" width="16" height="68" rx="8" fill="#8B96A7"/>
+        <rect x="308" y="161" width="184" height="188" rx="26" fill="url(#bodyGrad)" stroke="#C5CEDB" stroke-width="2.5"/>
+        <rect x="378" y="201" width="44" height="14" rx="7" fill="#111418" stroke="#FF6B2B" stroke-width="2"/>
+        <rect x="376" y="233" width="48" height="16" rx="4" fill="#111418" stroke="#6B778A" stroke-width="2"/>
+        <text x="332" y="323" font-family="monospace" font-size="16" font-weight="700" fill="#111418">33W DUAL</text>
+      
+  </g>
+  <rect x="440" y="148" width="308" height="270" rx="12" fill="#18202B" stroke="#2D3A4D" stroke-width="1.5"/>
+  <text x="464" y="186" font-family="monospace" font-size="12" font-weight="700" fill="#84ADFF">PRIMARY INTERFACE</text>
+  <text x="464" y="212" font-family="sans-serif" font-size="15" font-weight="700" fill="#EDF1F7">1x USB-C PD/PPS + 1x USB-A</text>
+  <line x1="464" y1="234" x2="724" y2="234" stroke="#2D3A4D"/>
+  <text x="464" y="264" font-family="monospace" font-size="12" font-weight="700" fill="#FF6B2B">ENVELOPE &amp; MASS</text>
+  <text x="464" y="290" font-family="monospace" font-size="13" fill="#EDF1F7">47 x 44 x 28 mm (body) | ~78 g</text>
+  <line x1="464" y1="312" x2="724" y2="312" stroke="#2D3A4D"/>
+  <text x="464" y="342" font-family="monospace" font-size="12" font-weight="700" fill="#A6B2C2">SPECIFICATION NOTE</text>
+  <text x="464" y="366" font-family="sans-serif" font-size="13" fill="#A6B2C2">Target design profile for demo store.</text>
+  <text x="464" y="388" font-family="sans-serif" font-size="13" fill="#A6B2C2">Verify batch lab sheet before live sale.</text>
+  <text x="52" y="542" font-family="monospace" font-size="12" fill="#A6B2C2">SKU PT-PWR-008 // POCKET THEORY INDUSTRIAL DESIGN SHEET</text>
+</svg>

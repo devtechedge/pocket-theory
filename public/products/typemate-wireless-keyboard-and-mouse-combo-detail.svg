@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="TypeMate Combo port and hardware architecture detail">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E242D"/>
+      <stop offset="100%" stop-color="#D7DFE9"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#11151C"/>
+  <g stroke="#222C3A" stroke-width="1">
+    <line x1="48" y1="90" x2="752" y2="90"/>
+    <line x1="48" y1="490" x2="752" y2="490"/>
+    <line x1="400" y1="90" x2="400" y2="490" stroke-dasharray="4 6"/>
+  </g>
+  <text x="52" y="62" font-family="monospace" font-size="13" font-weight="700" fill="#FF6B2B">INTERFACE &amp; PORT ARCHITECTURE // #27</text>
+  <text x="748" y="62" text-anchor="end" font-family="monospace" font-size="13" fill="#A6B2C2">TypeMate Combo</text>
+  <g transform="translate(-115, 10) scale(0.84)">
+    
+        <rect x="155" y="210" width="355" height="150" rx="14" fill="url(#bodyGrad)" stroke="#445063" stroke-width="2.5"/>
+        <g fill="#D7DFE9">
+          <rect x="174" y="230" width="316" height="20" rx="4"/>
+          <rect x="174" y="258" width="316" height="22" rx="4"/>
+          <rect x="174" y="288" width="316" height="22" rx="4"/>
+          <rect x="174" y="318" width="90" height="22" rx="4"/>
+          <rect x="272" y="318" width="130" height="22" rx="4" fill="#FF6B2B"/>
+          <rect x="410" y="318" width="80" height="22" rx="4"/>
+        </g>
+        <rect x="545" y="232" width="92" height="138" rx="44" fill="url(#bodyGrad)" stroke="#445063" stroke-width="2.5"/>
+        <rect x="586" y="252" width="10" height="28" rx="5" fill="#FF6B2B"/>
+      
+  </g>
+  <rect x="440" y="148" width="308" height="270" rx="12" fill="#18202B" stroke="#2D3A4D" stroke-width="1.5"/>
+  <text x="464" y="186" font-family="monospace" font-size="12" font-weight="700" fill="#84ADFF">PRIMARY INTERFACE</text>
+  <text x="464" y="212" font-family="sans-serif" font-size="15" font-weight="700" fill="#EDF1F7">Compact Tenkeyless + Symmetrical Mouse</text>
+  <line x1="464" y1="234" x2="724" y2="234" stroke="#2D3A4D"/>
+  <text x="464" y="264" font-family="monospace" font-size="12" font-weight="700" fill="#FF6B2B">ENVELOPE &amp; MASS</text>
+  <text x="464" y="290" font-family="monospace" font-size="13" fill="#EDF1F7">368 x 124 x 18 mm KB | ~490 g set</text>
+  <line x1="464" y1="312" x2="724" y2="312" stroke="#2D3A4D"/>
+  <text x="464" y="342" font-family="monospace" font-size="12" font-weight="700" fill="#A6B2C2">SPECIFICATION NOTE</text>
+  <text x="464" y="366" font-family="sans-serif" font-size="13" fill="#A6B2C2">Target design profile for demo store.</text>
+  <text x="464" y="388" font-family="sans-serif" font-size="13" fill="#A6B2C2">Verify batch lab sheet before live sale.</text>
+  <text x="52" y="542" font-family="monospace" font-size="12" fill="#A6B2C2">SKU PT-DSK-027 // POCKET THEORY INDUSTRIAL DESIGN SHEET</text>
+</svg>

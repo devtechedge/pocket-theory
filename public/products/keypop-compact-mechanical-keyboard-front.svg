@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="KeyPop 75% Mech studio front packshot">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6F8FB"/>
+      <stop offset="100%" stop-color="#E3E8F0"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2028"/>
+      <stop offset="100%" stop-color="#DCE3ED"/>
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#111418" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#111418" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <g stroke="#CFD7E3" stroke-width="1" opacity="0.55">
+    <line x1="48" y1="88" x2="752" y2="88"/>
+    <line x1="48" y1="512" x2="752" y2="512"/>
+  </g>
+  <text x="52" y="64" font-family="monospace" font-size="13" font-weight="700" letter-spacing="1.5" fill="#434B56">POCKET THEORY // DESK &amp; CREATOR</text>
+  <text x="748" y="64" text-anchor="end" font-family="monospace" font-size="13" font-weight="700" fill="#1849C6">PT-DSK-029</text>
+  <text x="690" y="218" text-anchor="end" font-family="sans-serif" font-size="128" font-weight="800" fill="#111418" fill-opacity="0.06">29</text>
+  <ellipse cx="400" cy="466" rx="185" ry="24" fill="url(#shadowGrad)"/>
+  
+        <rect x="170" y="195" width="460" height="186" rx="16" fill="url(#bodyGrad)" stroke="#4A566B" stroke-width="3"/>
+        <rect x="188" y="214" width="34" height="28" rx="5" fill="#FF6B2B"/>
+        <rect x="230" y="214" width="340" height="28" rx="5" fill="#DCE3ED"/>
+        <rect x="578" y="214" width="34" height="28" rx="5" fill="#465368"/>
+        <rect x="188" y="250" width="424" height="28" rx="5" fill="#DCE3ED"/>
+        <rect x="188" y="286" width="366" height="28" rx="5" fill="#DCE3ED"/>
+        <rect x="562" y="286" width="50" height="28" rx="5" fill="#FF6B2B"/>
+        <rect x="188" y="322" width="120" height="32" rx="5" fill="#8C98AA"/>
+        <rect x="316" y="322" width="168" height="32" rx="5" fill="#DCE3ED"/>
+        <rect x="492" y="322" width="120" height="32" rx="5" fill="#8C98AA"/>
+      
+  <rect x="52" y="530" width="380" height="36" rx="6" fill="#111418"/>
+  <circle cx="72" cy="548" r="5" fill="#FF6B2B"/>
+  <text x="88" y="553" font-family="monospace" font-size="12" font-weight="700" fill="#EDF1F7">84-KEY HOT-SWAP | TRI-MODE</text>
+  <text x="748" y="553" text-anchor="end" font-family="monospace" font-size="12" fill="#434B56">ILLUSTRATIVE STUDIO PACKSHOT</text>
+</svg>

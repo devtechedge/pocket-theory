@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Pocket Theory hardware product placeholder">
+  <rect width="800" height="600" fill="#EEF1F5"/>
+  <rect x="260" y="160" width="280" height="280" rx="28" fill="#1B2028" stroke="#C93D00" stroke-width="3"/>
+  <text x="400" y="308" text-anchor="middle" font-family="monospace" font-size="24" font-weight="700" fill="#EDF1F7">POCKET THEORY</text>
+</svg>

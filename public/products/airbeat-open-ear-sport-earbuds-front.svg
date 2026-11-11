@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="AirBeat Open-Ear studio front packshot">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6F8FB"/>
+      <stop offset="100%" stop-color="#E3E8F0"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#DCE2EC"/>
+      <stop offset="100%" stop-color="#252C37"/>
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#111418" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#111418" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <g stroke="#CFD7E3" stroke-width="1" opacity="0.55">
+    <line x1="48" y1="88" x2="752" y2="88"/>
+    <line x1="48" y1="512" x2="752" y2="512"/>
+  </g>
+  <text x="52" y="64" font-family="monospace" font-size="13" font-weight="700" letter-spacing="1.5" fill="#434B56">POCKET THEORY // AUDIO</text>
+  <text x="748" y="64" text-anchor="end" font-family="monospace" font-size="13" font-weight="700" fill="#1849C6">PT-AUD-015</text>
+  <text x="690" y="218" text-anchor="end" font-family="sans-serif" font-size="128" font-weight="800" fill="#111418" fill-opacity="0.06">15</text>
+  <ellipse cx="400" cy="466" rx="185" ry="24" fill="url(#shadowGrad)"/>
+  
+        <path d="M270 290 C250 190, 365 170, 380 250" fill="none" stroke="#252C37" stroke-width="18" stroke-linecap="round"/>
+        <ellipse cx="352" cy="282" rx="44" ry="28" fill="url(#bodyGrad)" stroke="#1E242D" stroke-width="2.5"/>
+        <path d="M530 290 C550 190, 435 170, 420 250" fill="none" stroke="#252C37" stroke-width="18" stroke-linecap="round"/>
+        <ellipse cx="448" cy="282" rx="44" ry="28" fill="url(#bodyGrad)" stroke="#1E242D" stroke-width="2.5"/>
+        <circle cx="352" cy="282" r="7" fill="#FF6B2B"/>
+        <circle cx="448" cy="282" r="7" fill="#FF6B2B"/>
+        <rect x="285" y="355" width="230" height="74" rx="36" fill="#252C37"/>
+      
+  <rect x="52" y="530" width="380" height="36" rx="6" fill="#111418"/>
+  <circle cx="72" cy="548" r="5" fill="#FF6B2B"/>
+  <text x="88" y="553" font-family="monospace" font-size="12" font-weight="700" fill="#EDF1F7">OPEN-EAR HOOKS | AMBIENT AWARE</text>
+  <text x="748" y="553" text-anchor="end" font-family="monospace" font-size="12" fill="#434B56">ILLUSTRATIVE STUDIO PACKSHOT</text>
+</svg>

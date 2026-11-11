@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="ClearTone USB-C port and hardware architecture detail">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D7DEE8"/>
+      <stop offset="100%" stop-color="#222832"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#11151C"/>
+  <g stroke="#222C3A" stroke-width="1">
+    <line x1="48" y1="90" x2="752" y2="90"/>
+    <line x1="48" y1="490" x2="752" y2="490"/>
+    <line x1="400" y1="90" x2="400" y2="490" stroke-dasharray="4 6"/>
+  </g>
+  <text x="52" y="62" font-family="monospace" font-size="13" font-weight="700" fill="#FF6B2B">INTERFACE &amp; PORT ARCHITECTURE // #18</text>
+  <text x="748" y="62" text-anchor="end" font-family="monospace" font-size="13" fill="#A6B2C2">ClearTone USB-C</text>
+  <g transform="translate(-115, 10) scale(0.84)">
+    
+        <path d="M310 215 Q310 340 400 340 Q490 340 490 215" fill="none" stroke="#222832" stroke-width="5"/>
+        <line x1="400" y1="340" x2="400" y2="418" stroke="#222832" stroke-width="6"/>
+        <circle cx="310" cy="198" r="26" fill="url(#bodyGrad)" stroke="#222832" stroke-width="2.5"/>
+        <circle cx="490" cy="198" r="26" fill="url(#bodyGrad)" stroke="#222832" stroke-width="2.5"/>
+        <rect x="386" y="362" width="28" height="44" rx="8" fill="#222832" stroke="#1849C6" stroke-width="2"/>
+        <rect x="384" y="418" width="32" height="24" rx="5" fill="#1849C6"/>
+        <rect x="392" y="442" width="16" height="14" rx="2" fill="#9AA6B8"/>
+      
+  </g>
+  <rect x="440" y="148" width="308" height="270" rx="12" fill="#18202B" stroke="#2D3A4D" stroke-width="1.5"/>
+  <text x="464" y="186" font-family="monospace" font-size="12" font-weight="700" fill="#84ADFF">PRIMARY INTERFACE</text>
+  <text x="464" y="212" font-family="sans-serif" font-size="15" font-weight="700" fill="#EDF1F7">Direct USB-C Plug (No 3.5mm Adapter)</text>
+  <line x1="464" y1="234" x2="724" y2="234" stroke="#2D3A4D"/>
+  <text x="464" y="264" font-family="monospace" font-size="12" font-weight="700" fill="#FF6B2B">ENVELOPE &amp; MASS</text>
+  <text x="464" y="290" font-family="monospace" font-size="13" fill="#EDF1F7">1200 mm TPE + Braid | ~16 g</text>
+  <line x1="464" y1="312" x2="724" y2="312" stroke="#2D3A4D"/>
+  <text x="464" y="342" font-family="monospace" font-size="12" font-weight="700" fill="#A6B2C2">SPECIFICATION NOTE</text>
+  <text x="464" y="366" font-family="sans-serif" font-size="13" fill="#A6B2C2">Target design profile for demo store.</text>
+  <text x="464" y="388" font-family="sans-serif" font-size="13" fill="#A6B2C2">Verify batch lab sheet before live sale.</text>
+  <text x="52" y="542" font-family="monospace" font-size="12" fill="#A6B2C2">SKU PT-AUD-018 // POCKET THEORY INDUSTRIAL DESIGN SHEET</text>
+</svg>

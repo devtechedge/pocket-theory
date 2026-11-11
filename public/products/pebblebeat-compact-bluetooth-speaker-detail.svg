@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="PebbleBeat port and hardware architecture detail">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#222832"/>
+      <stop offset="100%" stop-color="#384150"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#11151C"/>
+  <g stroke="#222C3A" stroke-width="1">
+    <line x1="48" y1="90" x2="752" y2="90"/>
+    <line x1="48" y1="490" x2="752" y2="490"/>
+    <line x1="400" y1="90" x2="400" y2="490" stroke-dasharray="4 6"/>
+  </g>
+  <text x="52" y="62" font-family="monospace" font-size="13" font-weight="700" fill="#FF6B2B">INTERFACE &amp; PORT ARCHITECTURE // #19</text>
+  <text x="748" y="62" text-anchor="end" font-family="monospace" font-size="13" fill="#A6B2C2">PebbleBeat</text>
+  <g transform="translate(-115, 10) scale(0.84)">
+    
+        <rect x="255" y="195" width="270" height="185" rx="56" fill="url(#bodyGrad)" stroke="#384150" stroke-width="3"/>
+        <path d="M525 262 Q585 262 575 312 Q565 342 525 322" fill="none" stroke="#FF6B2B" stroke-width="10" stroke-linecap="round"/>
+        <circle cx="345" cy="288" r="46" fill="#14181F" stroke="#455164" stroke-width="2"/>
+        <circle cx="450" cy="288" r="34" fill="#14181F" stroke="#FF6B2B" stroke-width="2"/>
+      
+  </g>
+  <rect x="440" y="148" width="308" height="270" rx="12" fill="#18202B" stroke="#2D3A4D" stroke-width="1.5"/>
+  <text x="464" y="186" font-family="monospace" font-size="12" font-weight="700" fill="#84ADFF">PRIMARY INTERFACE</text>
+  <text x="464" y="212" font-family="sans-serif" font-size="15" font-weight="700" fill="#EDF1F7">Passive Radiator + USB-C Charge</text>
+  <line x1="464" y1="234" x2="724" y2="234" stroke="#2D3A4D"/>
+  <text x="464" y="264" font-family="monospace" font-size="12" font-weight="700" fill="#FF6B2B">ENVELOPE &amp; MASS</text>
+  <text x="464" y="290" font-family="monospace" font-size="13" fill="#EDF1F7">94 x 76 x 42 mm | ~185 g</text>
+  <line x1="464" y1="312" x2="724" y2="312" stroke="#2D3A4D"/>
+  <text x="464" y="342" font-family="monospace" font-size="12" font-weight="700" fill="#A6B2C2">SPECIFICATION NOTE</text>
+  <text x="464" y="366" font-family="sans-serif" font-size="13" fill="#A6B2C2">Target design profile for demo store.</text>
+  <text x="464" y="388" font-family="sans-serif" font-size="13" fill="#A6B2C2">Verify batch lab sheet before live sale.</text>
+  <text x="52" y="542" font-family="monospace" font-size="12" fill="#A6B2C2">SKU PT-AUD-019 // POCKET THEORY INDUSTRIAL DESIGN SHEET</text>
+</svg>

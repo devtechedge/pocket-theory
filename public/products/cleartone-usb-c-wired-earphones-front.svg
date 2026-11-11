@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="ClearTone USB-C studio front packshot">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F6F8FB"/>
+      <stop offset="100%" stop-color="#E3E8F0"/>
+    </linearGradient>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D7DEE8"/>
+      <stop offset="100%" stop-color="#222832"/>
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#111418" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#111418" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  <g stroke="#CFD7E3" stroke-width="1" opacity="0.55">
+    <line x1="48" y1="88" x2="752" y2="88"/>
+    <line x1="48" y1="512" x2="752" y2="512"/>
+  </g>
+  <text x="52" y="64" font-family="monospace" font-size="13" font-weight="700" letter-spacing="1.5" fill="#434B56">POCKET THEORY // AUDIO</text>
+  <text x="748" y="64" text-anchor="end" font-family="monospace" font-size="13" font-weight="700" fill="#1849C6">PT-AUD-018</text>
+  <text x="690" y="218" text-anchor="end" font-family="sans-serif" font-size="128" font-weight="800" fill="#111418" fill-opacity="0.06">18</text>
+  <ellipse cx="400" cy="466" rx="185" ry="24" fill="url(#shadowGrad)"/>
+  
+        <path d="M310 215 Q310 340 400 340 Q490 340 490 215" fill="none" stroke="#222832" stroke-width="5"/>
+        <line x1="400" y1="340" x2="400" y2="418" stroke="#222832" stroke-width="6"/>
+        <circle cx="310" cy="198" r="26" fill="url(#bodyGrad)" stroke="#222832" stroke-width="2.5"/>
+        <circle cx="490" cy="198" r="26" fill="url(#bodyGrad)" stroke="#222832" stroke-width="2.5"/>
+        <rect x="386" y="362" width="28" height="44" rx="8" fill="#222832" stroke="#1849C6" stroke-width="2"/>
+        <rect x="384" y="418" width="32" height="24" rx="5" fill="#1849C6"/>
+        <rect x="392" y="442" width="16" height="14" rx="2" fill="#9AA6B8"/>
+      
+  <rect x="52" y="530" width="380" height="36" rx="6" fill="#111418"/>
+  <circle cx="72" cy="548" r="5" fill="#1849C6"/>
+  <text x="88" y="553" font-family="monospace" font-size="12" font-weight="700" fill="#EDF1F7">BUILT-IN USB-C DAC | INLINE MIC</text>
+  <text x="748" y="553" text-anchor="end" font-family="monospace" font-size="12" fill="#434B56">ILLUSTRATIVE STUDIO PACKSHOT</text>
+</svg>
