@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+build/
+next-env.d.ts
+
+# TypeScript & caches
+*.tsbuildinfo
+.eslintcache
+
+# Environment & secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.vercel/
+.neon
+
+# Local embedded DB data
+.pglite/
+
+# Testing & QA outputs
+coverage/
+playwright-report/
+test-results/
+blob-report/
+
+# OS
+.DS_Store
+Thumbs.db
